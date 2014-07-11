@@ -1,0 +1,15 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<polymer-element name="name-tag">
+    <template>
+        <b>{{owner.fname}} {{owner.lname}}</b>[{{role}}]</template>
+    <script>
+        Polymer('name-tag', {
+            owner: {
+                fname: 'Antony',
+                lname: 'John'
+            },
+            role: 'Developer',
+            level: 1
+        });
+    </script>
+</polymer-element>
